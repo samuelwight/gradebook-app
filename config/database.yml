@@ -12,6 +12,16 @@ default: &default
 development:
   <<: *default
   database: db/development.sqlite3
+#   Uncomment these and comment the top for mysql
+#  adapter: mysql2
+#  encoding: utf8
+#  database: grades
+#  pool: 5
+#  user: your_user_name_here
+#  password: your_password_here
+#  then run the following command:
+#  rails db:create db:migrate --trace
+#  This should initialize all the tables needed in your mysql database.
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

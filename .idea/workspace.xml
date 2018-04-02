@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="881cf437-bdf7-4854-ab02-73df80fbd818" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/courses/show.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/show.html.erb" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -35,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/courses/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -51,11 +56,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/courses/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="23" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="540">
+                <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -75,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="825">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +156,6 @@
         <option value="$PROJECT_DIR$/app/views/assignments/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assignments/edit.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20180401213645_change_column_name.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/assignments/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
@@ -130,6 +177,10 @@
         <option value="$PROJECT_DIR$/app/models/course.rb" />
         <option value="$PROJECT_DIR$/app/views/courses/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/show.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -186,6 +237,11 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="courses" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gradebook-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gradebook-app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -197,7 +253,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="courses_&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/controllers/courses_controller.rb&#10;course&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/models/course.rb&#10;add_colu&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/db/migrate/20180402212359_add_columns_to_course.rb&#10;credent&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/credentials_controller.rb&#10;assignments/new.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/new.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/routes.rb&#10;routes&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/routes.rb&#10;user&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;credential&#9;null&#9;null&#10;user.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;assignment&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/assignment.rb&#10;assignments&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/assignments_controller.rb&#10;courses&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/courses_controller.rb&#10;show&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/show.html.erb&#10;index.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/index.html.erb&#10;course.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/course.rb&#10;application&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;appp&#9;null&#9;null&#10;edit.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/edit.html.erb&#10;index.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/index.html.erb&#10;gemfile&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/Gemfile&#10;routeds&#9;null&#9;null&#10;gemfil&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/Gemfile&#10;courses_c&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/courses_controller.rb&#10;application.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;application.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;applicationcontro&#9;null&#9;null&#10;applicationC&#9;null&#9;null&#10;development.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/environments/development.rb" />
+    <property name="SearchEverywhereHistoryKey" value="database.ym&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/config/database.yml&#10;gemfile&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/Gemfile&#10;courses_&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/controllers/courses_controller.rb&#10;course&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/models/course.rb&#10;add_colu&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/db/migrate/20180402212359_add_columns_to_course.rb&#10;credent&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/credentials_controller.rb&#10;assignments/new.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/new.html.erb&#10;routes.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/routes.rb&#10;routes&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/routes.rb&#10;user&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;credential&#9;null&#9;null&#10;user.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;assignment&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/assignment.rb&#10;assignments&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/assignments_controller.rb&#10;courses&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/courses_controller.rb&#10;show&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/show.html.erb&#10;index.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/index.html.erb&#10;course.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/course.rb&#10;application&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;appp&#9;null&#9;null&#10;edit.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/edit.html.erb&#10;index.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/index.html.erb&#10;routeds&#9;null&#9;null&#10;gemfil&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/Gemfile&#10;courses_c&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/courses_controller.rb&#10;application.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;application.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;applicationcontro&#9;null&#9;null&#10;applicationC&#9;null&#9;null&#10;development.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/environments/development.rb" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -334,10 +390,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25057000" />
+    <option name="totallyTimeSpent" value="26098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25822604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -348,7 +405,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24733096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -371,29 +428,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/course.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/courses/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="28" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/channels/application_cable/channel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -488,13 +522,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180401213645_change_column_name.rb" />
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -687,7 +714,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/courses/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -695,7 +722,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -718,8 +745,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/courses/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="315">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="23" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="540">
+            <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
           <folding />
         </state>
       </provider>
