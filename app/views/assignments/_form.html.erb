@@ -1,0 +1,52 @@
+<%= form_for([@assignment.course, @assignment]) do |f| %>
+  <% if @assignment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
+
+      <ul>
+      <% @assignment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <label>Date</label>
+    <input type="text" name="assignment[timestamp]" id="assignment_timestamp">
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :graded %><br />
+    <%= f.check_box :graded %>
+  </div>
+  <div class="field">
+    <%= f.label :late %><br />
+    <%= f.check_box :late %>
+  </div>
+  <div class="field">
+    <%= f.label :score %><br />
+    <%= f.number_field :score %>
+  </div>
+  <div class="field">
+    <%= f.label :max_score %><br />
+    <%= f.number_field :max_score %>
+  </div>
+  <div class="field">
+    <%= f.label :letter_grade %><br />
+    <%= f.text_field :letter_grade %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_field :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

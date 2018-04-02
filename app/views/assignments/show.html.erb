@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Course:</b>
+  <%= @assignment.course_id %>
+</p>
+
+<p>
+  <b>Timestamp:</b>
+  <%= @assignment.timestamp %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @assignment.category %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @assignment.name %>
+</p>
+
+<p>
+  <b>Graded:</b>
+  <%= @assignment.graded %>
+</p>
+
+<p>
+  <b>Late:</b>
+  <%= @assignment.late %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @assignment.score %>
+</p>
+
+<p>
+  <b>Max score:</b>
+  <%= @assignment.max_score %>
+</p>
+
+<p>
+  <b>Letter grade:</b>
+  <%= @assignment.letter_grade %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @assignment.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_course_assignment_path(@assignment.course, @assignment) %> |
+<%= link_to 'Back', course_assignments_path(@assignment.course) %>

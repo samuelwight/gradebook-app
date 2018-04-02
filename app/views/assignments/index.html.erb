@@ -1,0 +1,51 @@
+<div class="ui breadcrumb">
+  <%= link_to 'My Courses', courses_path, class: 'section' %>
+  <span class="divider">/</span>
+  <%= link_to @assignments[0].course.name, course_path(@assignments[0].course), class: 'section' %>
+  <span class="divider">/</span>
+  <div class="active section"><%= @assignments.count %> Assignments</div>
+</div>
+
+<div class="ui divider"></div>
+
+<h1>Listing assignments</h1>
+
+<table>
+  <tr>
+    <th>Course</th>
+    <th>Timestamp</th>
+    <th>Category</th>
+    <th>Name</th>
+    <th>Graded</th>
+    <th>Late</th>
+    <th>Score</th>
+    <th>Max score</th>
+    <th>Letter grade</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @assignments.each do |assignment| %>
+  <tr>
+    <td><%= assignment.course_id %></td>
+    <td><%= assignment.timestamp %></td>
+    <td><%= assignment.category %></td>
+    <td><%= assignment.name %></td>
+    <td><%= assignment.graded %></td>
+    <td><%= assignment.late %></td>
+    <td><%= assignment.score %></td>
+    <td><%= assignment.max_score %></td>
+    <td><%= assignment.letter_grade %></td>
+    <td><%= assignment.comment %></td>
+    <td><%= link_to 'Show', [assignment.course, assignment] %></td>
+    <td><%= link_to 'Edit', edit_course_assignment_path(assignment.course, assignment) %></td>
+    <td><%= link_to 'Destroy', [assignment.course, assignment], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Assignment', new_course_assignment_path(params[:course_id]) %>

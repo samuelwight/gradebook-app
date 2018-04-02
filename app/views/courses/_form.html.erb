@@ -1,0 +1,35 @@
+<%= form_with(model: course, local: true, class: 'ui form') do |form| %>
+  <% if course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% course.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div class="two fields">
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name, id: :course_name, placeholder: 'Course name' %>
+      </div>
+      <div class="field">
+        <%= form.label :teacher %>
+        <%= form.text_field :teacher, id: :course_teacher, placeholder: 'Course teacher' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :period %>
+    <%= form.number_field :period, id: :course_period %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: 'ui button' %>
+  </div>
+<% end %>

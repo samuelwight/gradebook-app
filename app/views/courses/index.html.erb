@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Courses</h1>
+
+<%= link_to new_course_path, class: 'ui right floated green button' do %>
+  New Course
+  <i class="right arrow icon"></i>
+<% end %>
+
+<div class="ui divided link items">
+  <% @courses.sort{|a, b| a.period <=> b.period }.each do |course| %>
+    <%= link_to course, class: 'item' do %>
+      <div class="content">
+        <div class="header"><%= course.name %></div>
+        <div class="description">Taught by <%= course.teacher %> during period <%= course.period %>.</div>
+      </div>
+      <div class="extra">
+        <div class="ui grey label">
+          <i class="file outline icon"></i>
+          <%= course.assignments.length %> assignments
+        </div>
+        <div class="ui label green">
+          <i class="chart area icon"></i>
+          90% average
+        </div>
+        <%= link_to edit_course_path(course), class: 'ui right floated primary button' do %>
+          <i class="left edit icon"></i>
+          Edit Course
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

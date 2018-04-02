@@ -6,9 +6,30 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <style type="text/css">
+      .main.container {
+        padding-top: 100px;
+      }
+    </style>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="ui top fixed menu">
+      <div class="right menu">
+        <%= active_link_to 'Courses', root_path, class: 'item' %>
+        <%= active_link_to 'Account Settings', edit_user_registration_path, class: 'item' %>
+        <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete, class: 'item' %>
+      </div>
+    </div>
+
+    <div class="ui main container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+    </div>
   </body>
 </html>

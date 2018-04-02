@@ -1,0 +1,43 @@
+<div class="ui breadcrumb">
+  <%= link_to 'My Courses', courses_path, class: 'section' %>
+  <span class="divider">/</span>
+  <div class="active section"><%= @course.name %></div>
+</div>
+
+<div class="ui divider"></div>
+
+<h1 class="ui header">
+  <i class="book icon"></i>
+  <%= @course.name %>
+</h1>
+<%= link_to edit_course_path(@course), class: 'ui right floated green button' do %>
+  <i class="left edit icon"></i>
+  Edit Course
+<% end %>
+<h4 class="ui header">
+  Taught by <%= @course.teacher %> during period <%= @course.period %>.
+</h4>
+
+<h2 class="ui header">
+  <i class="sort amount up icon"></i>
+  Most Recent Assignments
+</h2>
+<div class="ui list">
+  <% @course.assignments.take(5).sort {|a, b| b.timestamp <=> a.timestamp}.each do |assignment| %>
+    <div class="item">
+      <i class="file alternate outline"></i>
+      <div class="content">
+        <%= link_to "#{assignment.name} (#{assignment.category})", course_assignment_path(@course), class: 'header' %>
+        <div class="description">
+          <% if assignment.graded %>
+            You made <%= assignment.score %> out of <%= assignment.max_score %> points possible on this assignment.
+          <% else %>
+            This assignment hasn't been graded yet.
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end%>
+</div>
+
+<%= link_to 'View Other Assignments', course_assignments_path(@course), class: 'ui blue button' %>
