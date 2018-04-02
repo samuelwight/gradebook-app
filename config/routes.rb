@@ -9,8 +9,6 @@ Rails.application.routes.draw do
       resources :assignments
     end
 
-    resources :credentials
-
     root to: 'courses#index', as: :authenticated_root
   end
   root to: redirect('/users/sign_in')
