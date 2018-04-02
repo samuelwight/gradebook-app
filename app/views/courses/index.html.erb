@@ -26,7 +26,7 @@
     <% courses.sort{|a, b| a.period <=> b.period }.each do |course| %>
       <%= link_to course, class: 'item' do %>
         <div class="content">
-          <div class="header"><%= course.name %></div>
+          <div class="header"><%= course.name %>, Semester <%= course.semester %></div>
           <div class="description">Taught by <%= course.teacher %> during period <%= course.period %>.</div>
         </div>
         <div class="extra">
