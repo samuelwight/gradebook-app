@@ -1,5 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<% if current_user.credential.nil? %>
+  <div class="ui message">
+    <div class="header">
+      Connect iNow to your account
+    </div>
+    <p>Connect iNow to your account to get automatic grade updating. See your grades as soon as they get entered!</p>
+    <%= link_to new_credential_path, class: 'ui green button' do %>
+      Get Started
+      <i class="right arrow icon"></i>
+    <% end %>
+  </div>
+<% end %>
+
 <h1>Courses</h1>
 
 <%= link_to new_course_path, class: 'ui right floated green button' do %>
