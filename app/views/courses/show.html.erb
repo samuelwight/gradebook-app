@@ -8,7 +8,7 @@
 
 <h1 class="ui header">
   <i class="book icon"></i>
-  <%= @course.name %>
+  <%= @course.name %>, Semester <%= @course.semester %>, <%= @course.year %>
 </h1>
 <%= link_to edit_course_path(@course), class: 'ui right floated green button' do %>
   <i class="left edit icon"></i>
