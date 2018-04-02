@@ -26,6 +26,7 @@ class CoursesController < ApplicationController
   # POST /courses
   # POST /courses.json
   def create
+    puts course_params
     @course = current_user.courses.build(course_params)
 
     respond_to do |format|
@@ -71,6 +72,6 @@ class CoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
-      params.require(:course).permit(:name, :teacher, :period)
+      params.require(:course).permit(:name, :teacher, :period, :year, :semester)
     end
 end
