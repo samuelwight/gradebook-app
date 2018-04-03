@@ -10,15 +10,15 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: db/development.sqlite3
+#  <<: *default
+#  database: db/development.sqlite3
 #   Uncomment these and comment the top for mysql
-#  adapter: mysql2
-#  encoding: utf8
-#  database: grades
-#  pool: 5
-#  user: your_user_name_here
-#  password: your_password_here
+  adapter: mysql2
+  encoding: utf8
+  database: grades
+  pool: 5
+  user: root
+  password: Livingtree12,
 #  then run the following command:
 #  rails db:create db:migrate --trace
 #  This should initialize all the tables needed in your mysql database.

@@ -20,6 +20,8 @@
   <i class="right arrow icon"></i>
 <% end %>
 
+<%= link_to 'Refresh Courses', refresh_courses_path, class: 'ui green button' %>
+
 <div class="ui divided link items">
   <% Course.each_year(@courses) do |year, courses| %>
     <h2><%= year %></h2>
