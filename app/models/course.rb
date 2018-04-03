@@ -1,6 +1,7 @@
 class Course < ApplicationRecord
   belongs_to :user
   has_many :assignments, dependent: :destroy
+  has_many :averages, dependent: :destroy
   
   def self.each_year(array)
     years = []
