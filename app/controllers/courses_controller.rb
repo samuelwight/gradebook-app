@@ -64,6 +64,11 @@ class CoursesController < ApplicationController
     end
   end
 
+  def refresh
+    Course.get_courses(current_user.credential.username, current_user.credential.password)
+    redirect_to courses_url, notice: 'Your courses will be updated soon!'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_course
@@ -74,4 +79,5 @@ class CoursesController < ApplicationController
     def course_params
       params.require(:course).permit(:name, :teacher, :period, :year, :semester)
     end
+
 end

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     # Set up nested courses and assignments.
     resources :courses do
       resources :assignments
+      get 'refresh', on: :collection
     end
 
     resources :credentials
