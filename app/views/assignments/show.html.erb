@@ -10,56 +10,28 @@
 
 <div class="ui divider"></div>
 
-<p>
-  <b>Course:</b>
-  <%= @assignment.course_id %>
-</p>
+<h1 class="ui header">
+  <i class="file outline icon"></i>
+  <%= @assignment.name %> (<%= @assignment.category %>) on <%= Time.at(@assignment.timestamp).strftime("%m/%d/%y") %>
+</h1>
 
-<p>
-  <b>Timestamp:</b>
-  <%= @assignment.timestamp %>
-</p>
+<%= link_to 'Edit Assignment', edit_course_assignment_path(@assignment.course, @assignment), class: 'ui right floated blue button' %>
 
-<p>
-  <b>Category:</b>
-  <%= @assignment.category %>
-</p>
+<h3 class="ui header">
+  <i class="calculator icon"></i>
+  Points: <%= @assignment.score %> out of <%= @assignment.max_score %>
+</h3>
 
-<p>
-  <b>Name:</b>
-  <%= @assignment.name %>
-</p>
+<h3 class="ui header">
+  <i class="chart area icon"></i>
+  Score: <%= (( @assignment.score.to_f / @assignment.max_score ) * 100 ).round(2) %>%
+</h3>
 
-<p>
-  <b>Graded:</b>
-  <%= @assignment.graded %>
-</p>
+<h3 class="ui header">
+  <i class="book icon"></i>
+  Letter Grade: <%= @assignment.letter_grade %>
+</h3>
 
-<p>
-  <b>Late:</b>
-  <%= @assignment.late %>
-</p>
+<h3 class="header">Comments:</h3>
 
-<p>
-  <b>Score:</b>
-  <%= @assignment.score %>
-</p>
-
-<p>
-  <b>Max score:</b>
-  <%= @assignment.max_score %>
-</p>
-
-<p>
-  <b>Letter grade:</b>
-  <%= @assignment.letter_grade %>
-</p>
-
-<p>
-  <b>Comment:</b>
-  <%= @assignment.comment %>
-</p>
-
-
-<%= link_to 'Edit', edit_course_assignment_path(@assignment.course, @assignment) %> |
-<%= link_to 'Back', course_assignments_path(@assignment.course) %>
+<p><%= @assignment.comment %></p>
