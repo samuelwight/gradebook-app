@@ -8,44 +8,25 @@
 
 <div class="ui divider"></div>
 
-<h1>Listing assignments</h1>
+<h1><%= @course.name %> Assignments</h1>
 
-<table>
-  <tr>
-    <th>Course</th>
-    <th>Timestamp</th>
-    <th>Category</th>
-    <th>Name</th>
-    <th>Graded</th>
-    <th>Late</th>
-    <th>Score</th>
-    <th>Max score</th>
-    <th>Letter grade</th>
-    <th>Comment</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<%= link_to 'New Assignment', new_course_assignment_path(params[:course_id]), class: 'ui right floated green button' %>
 
-<% @assignments.each do |assignment| %>
-  <tr>
-    <td><%= assignment.course_id %></td>
-    <td><%= assignment.timestamp %></td>
-    <td><%= assignment.category %></td>
-    <td><%= assignment.name %></td>
-    <td><%= assignment.graded %></td>
-    <td><%= assignment.late %></td>
-    <td><%= assignment.score %></td>
-    <td><%= assignment.max_score %></td>
-    <td><%= assignment.letter_grade %></td>
-    <td><%= assignment.comment %></td>
-    <td><%= link_to 'Show', [assignment.course, assignment] %></td>
-    <td><%= link_to 'Edit', edit_course_assignment_path(assignment.course, assignment) %></td>
-    <td><%= link_to 'Destroy', [assignment.course, assignment], :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+<div class="ui list">
+  <% @assignments.each do |assignment| %>
+    <%= link_to [assignment.course, assignment], class: 'item' do %>
+      <i class="file outline icon"></i>
+      <div class="content">
+        <div class="header"><%= assignment.name %> (<%= assignment.category %>) on <%= Time.at(assignment.timestamp).strftime("%m/%d/%y") %></div>
+        <div class="description">
+          <% if assignment.graded %>
+            You earned <%= assignment.score %> out of <%= assignment.max_score %> points on this assignment, and your letter grade is a <%= assignment.letter_grade %>.
+          <% else %>
+            This assignment has not been graded yet.
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
 <br />
-
-<%= link_to 'New Assignment', new_course_assignment_path(params[:course_id]) %>
