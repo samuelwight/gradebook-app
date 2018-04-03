@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180403010804) do
+ActiveRecord::Schema.define(version: 20180402212359) do
 
-  create_table "assignments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.bigint "course_id"
+  create_table "assignments", force: :cascade do |t|
+    t.integer "course_id"
     t.integer "timestamp"
     t.string "category"
     t.string "name"
@@ -28,23 +28,21 @@ ActiveRecord::Schema.define(version: 20180403010804) do
     t.index ["course_id"], name: "index_assignments_on_course_id"
   end
 
-  create_table "courses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "courses", force: :cascade do |t|
     t.string "name"
     t.string "teacher"
-    t.integer "period", unsigned: true
+    t.integer "period"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.string "picture"
     t.integer "year"
     t.integer "semester"
-    t.integer "year_id"
-    t.integer "nine_weeks_id"
     t.index ["user_id"], name: "index_courses_on_user_id"
   end
 
-  create_table "credentials", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.bigint "user_id"
+  create_table "credentials", force: :cascade do |t|
+    t.integer "user_id"
     t.string "username"
     t.string "password"
     t.datetime "created_at", null: false
@@ -52,22 +50,7 @@ ActiveRecord::Schema.define(version: 20180403010804) do
     t.index ["user_id"], name: "index_credentials_on_user_id"
   end
 
-  create_table "delayed_jobs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer "priority", default: 0, null: false
-    t.integer "attempts", default: 0, null: false
-    t.text "handler", null: false
-    t.text "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string "locked_by"
-    t.string "queue"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["priority", "run_at"], name: "delayed_jobs_priority"
-  end
-
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -84,6 +67,4 @@ ActiveRecord::Schema.define(version: 20180403010804) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "assignments", "courses"
-  add_foreign_key "credentials", "users"
 end
