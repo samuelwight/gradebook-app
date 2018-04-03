@@ -1,7 +1,7 @@
 <div class="ui breadcrumb">
   <%= link_to 'My Courses', courses_path, class: 'section' %>
   <span class="divider">/</span>
-  <%= link_to @assignments[0].course.name, course_path(@assignments[0].course), class: 'section' %>
+  <%= link_to @course.name, course_path(@course), class: 'section' %>
   <span class="divider">/</span>
   <div class="active section"><%= @assignments.count %> Assignments</div>
 </div>
