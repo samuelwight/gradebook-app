@@ -13,7 +13,7 @@
 <%= link_to 'New Assignment', new_course_assignment_path(params[:course_id]), class: 'ui right floated green button' %>
 
 <div class="ui list">
-  <% @assignments.each do |assignment| %>
+  <% @assignments.sort{|a, b| b.timestamp <=> a.timestamp}.each do |assignment| %>
     <%= link_to [assignment.course, assignment], class: 'item' do %>
       <i class="file outline icon"></i>
       <div class="content">
