@@ -65,7 +65,7 @@ class CoursesController < ApplicationController
   end
 
   def refresh
-    Course.get_courses(current_user.credential.username, current_user.credential.password)
+    Course.get_courses(current_user.credential.username, current_user.credential.password, current_user.id)
     redirect_to courses_url, notice: 'Your courses will be updated soon!'
   end
 

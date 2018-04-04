@@ -1,5 +1,15 @@
+<div class="ui breadcrumb">
+  <%= link_to 'My Courses', courses_path, class: 'section' %>
+  <span class="divider">/</span>
+  <%= link_to @course.name, course_path(@course), class: 'section' %>
+  <span class="divider">/</span>
+  <%= link_to "#{@course.assignments.count} Assignments", course_assignments_path(@course), class: 'section' %>
+  <span class="divider">/</span>
+  <div class="active section">New Assignment</div>
+</div>
+
+<div class="ui divider"></div>
+
 <h1>New assignment</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Back', course_assignments_path(@assignment.course) %>

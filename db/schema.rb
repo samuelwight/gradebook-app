@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180402212359) do
+ActiveRecord::Schema.define(version: 20180403183901) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer "course_id"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(version: 20180402212359) do
     t.index ["course_id"], name: "index_assignments_on_course_id"
   end
 
+  create_table "averages", force: :cascade do |t|
+    t.integer "timestamp"
+    t.integer "average"
+    t.integer "course_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_averages_on_course_id"
+  end
+
   create_table "courses", force: :cascade do |t|
     t.string "name"
     t.string "teacher"
@@ -38,6 +47,9 @@ ActiveRecord::Schema.define(version: 20180402212359) do
     t.string "picture"
     t.integer "year"
     t.integer "semester"
+    t.integer "year_id"
+    t.integer "nine_weeks_id"
+    t.string "class_id"
     t.index ["user_id"], name: "index_courses_on_user_id"
   end
 

@@ -18,26 +18,84 @@
   Taught by <%= @course.teacher %> during period <%= @course.period %>.
 </h4>
 
-<h2 class="ui header">
-  <i class="sort amount up icon"></i>
-  Most Recent Assignments
-</h2>
-<div class="ui list">
-  <% @course.assignments.take(5).sort {|a, b| b.timestamp <=> a.timestamp}.each do |assignment| %>
-    <div class="item">
-      <i class="file alternate outline"></i>
-      <div class="content">
-        <%= link_to "#{assignment.name} (#{assignment.category})", course_assignment_path(@course), class: 'header' %>
-        <div class="description">
-          <% if assignment.graded %>
-            You made <%= assignment.score %> out of <%= assignment.max_score %> points possible on this assignment.
-          <% else %>
-            This assignment hasn't been graded yet.
-          <% end %>
+<div class="ui grid">
+  <div class="nine wide column">
+    <h3 class="ui header">
+      <i class="sort amount up icon"></i>
+      Most Recent Assignments
+    </h3>
+  </div>
+  <div class="seven wide column">
+    <h3 class="ui header">
+      <i class="chart area icon"></i>
+      Grade Over Time
+    </h3>
+  </div>
+</div>
+
+<div class="ui grid">
+  <div class="eight wide column">
+    <div class="ui list">
+      <% @course.assignments.take(5).sort {|a, b| b.timestamp <=> a.timestamp}.each do |assignment| %>
+        <div class="item">
+          <i class="file alternate outline"></i>
+          <div class="content">
+            <%= link_to "#{assignment.name} (#{assignment.category})", course_assignment_path(@course), class: 'header' %>
+            <div class="description">
+              <% if assignment.graded %>
+                You made <%= assignment.score %> out of <%= assignment.max_score %> points possible on this assignment.
+              <% else %>
+                This assignment hasn't been graded yet.
+              <% end %>
+            </div>
+          </div>
         </div>
-      </div>
+      <% end%>
     </div>
-  <% end%>
+  </div>
+  <div class="eight wide column">
+    <canvas id="myChart" width="200" height="100"></canvas>
+    <%= link_to 'Refresh Averages', refresh_course_averages_path(@course), class: 'ui center floated blue button' %>
+  </div>
 </div>
 
 <%= link_to 'View Other Assignments', course_assignments_path(@course), class: 'ui blue button' %>
+
+<script>
+    $(document).ready(function() {
+        $.get('./<%= @course.id %>/averages.json', function(data) {
+            var ctx = document.getElementById("myChart").getContext('2d');
+            averages = data;
+
+            dates = [];
+            actual_averages = [];
+
+            averages.forEach(function(average) {
+                if (!(dates.indexOf(average.timestamp) > -1)) {
+                    dates.push(average.timestamp);
+                }
+                actual_averages.push(average.average);
+            });
+
+            dates.forEach(function(date, index) {
+                myDate = new Date(date * 1000);
+                dates[index] = (myDate.getMonth() + 1) + "/" + myDate.getDate() + "/" + myDate.getFullYear();
+            });
+
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: 'Average',
+                        data: actual_averages,
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255,99,132,1)',
+                        borderWidth: 1
+                    }]
+                }
+            });
+
+        });
+    });
+</script>

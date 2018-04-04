@@ -26,6 +26,11 @@ class AssignmentsController < ApplicationController
     puts "Assignment params here: " + assignment_params.to_s
     temp = assignment_params
     temp['timestamp'] = Chronic.parse(assignment_params['timestamp']).to_time.to_i.to_s
+
+    average = (assignment_params['score'].to_f / assignment_params['max_score'].to_i) * 100
+
+    temp['letter_grade'] = Assignment.get_letter_grade(average)
+
     @assignment = @course.assignments.build(temp)
 
     if @assignment.save
