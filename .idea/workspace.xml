@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="881cf437-bdf7-4854-ab02-73df80fbd818" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/courses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
       <change beforePath="$PROJECT_DIR$/app/models/course.rb" afterPath="$PROJECT_DIR$/app/models/course.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/courses/show.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180402212359_add_columns_to_course.rb" afterPath="" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -37,41 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="courses_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="288">
+              <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="averages_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/averages_controller.rb">
+      <file leaf-file-name="course.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/course.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="average.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/average.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/courses/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="102">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -114,7 +91,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/testing.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/devise.html.erb" />
@@ -125,7 +101,6 @@
         <option value="$PROJECT_DIR$/app/views/assignments/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assignments/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/assignments/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/course.rb" />
         <option value="$PROJECT_DIR$/app/views/averages/_average.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/index.html.erb" />
@@ -133,6 +108,8 @@
         <option value="$PROJECT_DIR$/app/controllers/averages_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/average.rb" />
         <option value="$PROJECT_DIR$/app/views/courses/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/course.rb" />
       </list>
     </option>
   </component>
@@ -178,6 +155,12 @@
               <item name="gradebook-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="gradebook-app" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gradebook-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gradebook-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -186,6 +169,21 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="averages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gradebook-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gradebook-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="course" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gradebook-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gradebook-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="course" type="462c0819:PsiDirectoryNode" />
+              <item name="assignments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gradebook-app" type="b2602c69:ProjectViewProjectNode" />
@@ -206,7 +204,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="average.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/models/average.rb&#10;courses_contr&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/courses_controller.rb&#10;routes.&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/config/routes.rb&#10;assignments&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;averages_c&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/averages_controller.rb&#10;assignments_control&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;course.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/models/course.rb&#10;routes.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/config/routes.rb&#10;assignmen&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;assignment.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/models/assignment.rb&#10;index.html.erb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/views/assignments/index.html.erb&#10;assignments_controll&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;gemfile&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/Gemfile&#10;gemfi&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/Gemfile&#10;routes&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/testing.rb&#10;courses&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/controllers/courses_controller.rb&#10;database.ym&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/config/database.yml&#10;courses_&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/controllers/courses_controller.rb&#10;course&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/models/course.rb&#10;add_colu&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/db/migrate/20180402212359_add_columns_to_course.rb&#10;credent&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/credentials_controller.rb&#10;assignments/new.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/new.html.erb&#10;user&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;credential&#9;null&#9;null&#10;user.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;assignment&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/assignment.rb&#10;show&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/show.html.erb&#10;index.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/index.html.erb&#10;application&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;appp&#9;null&#9;null&#10;edit.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/edit.html.erb&#10;routeds&#9;null&#9;null&#10;gemfil&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/Gemfile&#10;courses_c&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/courses_controller.rb&#10;application.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;application.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;applicationcontro&#9;null&#9;null&#10;applicationC&#9;null&#9;null&#10;development.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/environments/development.rb" />
+    <property name="SearchEverywhereHistoryKey" value="add columns&#9;null&#9;null&#10;course.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/models/course.rb&#10;course_c&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/courses_controller.rb&#10;average.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/models/average.rb&#10;courses_contr&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/courses_controller.rb&#10;routes.&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/config/routes.rb&#10;assignments&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;averages_c&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/averages_controller.rb&#10;assignments_control&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;routes.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/config/routes.rb&#10;assignmen&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;assignment.rb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/models/assignment.rb&#10;index.html.erb&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/views/assignments/index.html.erb&#10;assignments_controll&#9;FILE&#9;file://C:/Users/paperspace/Documents/gradebook-app/app/controllers/assignments_controller.rb&#10;gemfile&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/Gemfile&#10;gemfi&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/Gemfile&#10;routes&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/testing.rb&#10;courses&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/controllers/courses_controller.rb&#10;database.ym&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/config/database.yml&#10;courses_&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/controllers/courses_controller.rb&#10;course&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/app/models/course.rb&#10;add_colu&#9;FILE&#9;file:///Users/samwightt/Documents/rails/gradebook-app/db/migrate/20180402212359_add_columns_to_course.rb&#10;credent&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/credentials_controller.rb&#10;assignments/new.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/new.html.erb&#10;user&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;credential&#9;null&#9;null&#10;user.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/user.rb&#10;assignment&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/models/assignment.rb&#10;show&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/assignments/show.html.erb&#10;index.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/index.html.erb&#10;application&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;appp&#9;null&#9;null&#10;edit.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/courses/edit.html.erb&#10;routeds&#9;null&#9;null&#10;gemfil&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/Gemfile&#10;courses_c&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/controllers/courses_controller.rb&#10;application.html&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;application.html.erb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/app/views/layouts/application.html.erb&#10;applicationcontro&#9;null&#9;null&#10;applicationC&#9;null&#9;null&#10;development.rb&#9;FILE&#9;file:///Users/samwightt/Documents/rails/grade_viewer/config/environments/development.rb" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -339,18 +337,17 @@
       <workItem from="1522604877291" duration="19214000" />
       <workItem from="1522698100005" duration="3283000" />
       <workItem from="1522703764613" duration="2560000" />
-      <workItem from="1522759642333" duration="18194000" />
+      <workItem from="1522759642333" duration="20179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50382000" />
+    <option name="totallyTimeSpent" value="52367000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1280" height="728" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26626325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2885246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
@@ -358,7 +355,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24733096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3376206" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -370,6 +367,27 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5028612" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26626325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24733096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -382,13 +400,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -500,6 +511,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -649,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/course.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/assignments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-748">
@@ -705,18 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/averages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -724,15 +720,39 @@
     <entry file="file://$PROJECT_DIR$/app/models/average.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/courses/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180403183901_add_columns_to_course.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/course.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding />
         </state>
       </provider>

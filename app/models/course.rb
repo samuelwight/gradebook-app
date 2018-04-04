@@ -14,9 +14,10 @@ class Course < ApplicationRecord
     end
   end
 
-  def self.get_courses(user, pass)
+  def self.get_courses(user, pass, user_id)
     authCode = JSON.parse(HTTP.get("http://localhost:7070/login?username=#{user}&password=#{pass}").to_s)['data']['authCode']
     years = JSON.parse(HTTP.get("http://localhost:7070/getYears?authCode=#{authCode}").to_s)['data']
+    @user = User.find(user_id)
 
     years.each do |year|
       nineWeeks = JSON.parse(HTTP.get("http://localhost:7070/getNineWeeks?authCode=#{authCode}&yearId=#{year['id']}").to_s)['data']
@@ -30,7 +31,7 @@ class Course < ApplicationRecord
         end
         classes = JSON.parse(HTTP.get("http://localhost:7070/getClasses?authCode=#{authCode}&nineWeeksId=#{week['id']}&yearId=#{year['id']}").to_s)['data']
         classes.each do |course|
-          current_user.courses.build(name: course['name'], teacher: course['teacher'], period: course['period'], semester: current_semeter, year: actual_year, year_id: year['id'].to_i, nine_weeks_id: week['id'].to_i)
+          @user.courses.build(name: course['name'], teacher: course['teacher'], period: course['period'], semester: current_semester, year: actual_year, year_id: year['id'].to_i, nine_weeks_id: week['id'].to_i)
           sleep(1)
         end
         sleep(1)

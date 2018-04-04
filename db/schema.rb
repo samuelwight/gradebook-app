@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180403151353) do
+ActiveRecord::Schema.define(version: 20180403183901) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer "course_id"
@@ -47,6 +47,9 @@ ActiveRecord::Schema.define(version: 20180403151353) do
     t.string "picture"
     t.integer "year"
     t.integer "semester"
+    t.integer "year_id"
+    t.integer "nine_weeks_id"
+    t.string "class_id"
     t.index ["user_id"], name: "index_courses_on_user_id"
   end
 
